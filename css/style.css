@@ -1,0 +1,125 @@
+:root {
+    --very-dark-blue: hsl(232, 19%, 15%);
+    --dark-desaturated-blue: hsl(228, 28%, 20%);
+    --desaturated-blue: hsl(228, 34%, 66%);
+    --white: hsl(0, 0%, 100%);
+
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-first-color: hsl(37, 97%, 70%);
+    --instagram-second-color: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    width: 375px;
+    margin: 2em auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.navbar-left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.1em 0;
+}
+
+.navbar-left-side::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: relative;
+    top: .9em;
+    background-color: hsl(0, 0%, 18%);
+}
+
+.navbar-left-side > h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.navbar-left-side > p {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9em;
+    margin: .3em 0;
+}
+
+.navbar-right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 0 0 0;
+}
+
+.navbar-right-side > span {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.toggle {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    width: 3em;
+    height: 1.6em;
+    border-radius: 1em;
+    cursor: pointer; } 
+.circle {
+    display: block;
+    background: var(--very-dark-blue);
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5em;
+    height: 14em;
+    margin-bottom: 1.5em;
+    background-color: var(--dark-desaturated-blue);
+}
+
+.border-facebook {
+    border-top: 5px solid var(--facebook);
+}
+
+.border-twitter {
+    border-top: 5px solid var(--twitter);
+}
+
+.border-instagram::before {
+    display: block;
+    content: "";
+    background: linear-gradient(to right, var(--instagram-first-color), var(--instagram-second-color));
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+}
+
+.border-youtube {
+    border-top: 5px solid var(--youtube);
+}
