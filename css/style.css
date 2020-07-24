@@ -9,6 +9,9 @@
     --instagram-first-color: hsl(37, 97%, 70%);
     --instagram-second-color: hsl(329, 70%, 58%);
     --youtube: hsl(348, 97%, 39%);
+
+    --sucess: #1EB589;
+    --danger: #DC414C;
 }
 
 html, body {
@@ -103,12 +106,28 @@ body {
     background-color: var(--dark-desaturated-blue);
 }
 
-.border-facebook {
-    border-top: 5px solid var(--facebook);
+.border-facebook::before {
+    display: block;
+    content: "";
+    background-color: var(--facebook);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
 }
 
-.border-twitter {
-    border-top: 5px solid var(--twitter);
+.border-twitter::before {
+    display: block;
+    content: "";
+    background-color: var(--twitter);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
 }
 
 .border-instagram::before {
@@ -118,8 +137,119 @@ body {
     height: 5px;
     width: 100%;
     border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
 }
 
-.border-youtube {
-    border-top: 5px solid var(--youtube);
+.border-youtube::before {
+    display: block;
+    content: "";
+    background-color: var(--youtube);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header-icon {
+    margin-right: .7em;
+}
+
+.card-header-text {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body-number {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.card-body-text {
+    color: var(--desaturated-blue);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-icon {
+    margin-right: .5em;
+}
+
+.card-footer-day {
+    color: var(--white);
+    font-weight: 700;
+    font-size: .85em;
+}
+
+.text-success {
+    color: var(--sucess);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.small-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5em;
+    height: 8.5em;
+    margin-bottom: 1.2em;
+    background-color: var(--dark-desaturated-blue);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.card-top-text {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.card-bottom-number {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+.overview-title {
+    color: var(--white);
+    margin-bottom: 1.3em;
 }
