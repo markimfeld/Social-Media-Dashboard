@@ -1,0 +1,235 @@
+@import 'general.css';
+
+body {
+    background-color: var(--white);
+    width: 375px;
+    margin: 2em auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.navbar-left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.1em 0;
+}
+
+.navbar-left-side::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: relative;
+    top: .9em;
+    background-color: hsl(0, 0%, 18%);
+}
+
+.navbar-left-side > h1 {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.navbar-left-side > p {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    font-size: .9em;
+    margin: .3em 0;
+}
+
+.navbar-right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 0 0 0;
+}
+
+.navbar-right-side > span {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.toggle {
+    background: var(--light-gray);
+    width: 3em;
+    height: 1.6em;
+    border-radius: 1em;
+    cursor: pointer; } 
+.circle {
+    display: block;
+    background: var(--white);
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    position: relative;
+    left: 24px;
+    top: 2px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5em;
+    height: 14em;
+    margin-bottom: 1.5em;
+    background-color: var(--light-grayish-blue);
+}
+
+.border-facebook::before {
+    display: block;
+    content: "";
+    background-color: var(--facebook);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
+}
+
+.border-twitter::before {
+    display: block;
+    content: "";
+    background-color: var(--twitter);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
+}
+
+.border-instagram::before {
+    display: block;
+    content: "";
+    background: linear-gradient(to right, var(--instagram-first-color), var(--instagram-second-color));
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
+}
+
+.border-youtube::before {
+    display: block;
+    content: "";
+    background-color: var(--youtube);
+    height: 5px;
+    width: 100%;
+    border-radius: .5em .5em 0 0;
+    position: relative;
+    top: -1.2em;
+    left: 0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header-icon {
+    margin-right: .7em;
+}
+
+.card-header-text {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body-number {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 4em;
+}
+
+.card-body-text {
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-icon {
+    margin-right: .5em;
+}
+
+.card-footer-day {
+    color: var(--white);
+    font-weight: 700;
+    font-size: .85em;
+}
+
+.text-success {
+    color: var(--sucess);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.small-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .5em;
+    height: 8.5em;
+    margin-bottom: 1.2em;
+    background-color: var(--light-grayish-blue);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.card-top-text {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.card-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.card-bottom-number {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+.overview-title {
+    color: var(--very-dark-blue);
+    margin-bottom: 1.3em;
+}
