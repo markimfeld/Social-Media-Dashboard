@@ -1,6 +1,6 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
-Here is my solution for this challenges.
+Here is my solution for this challenge. Completely Responsive.
 
 CSS:
 - I used Grid, Flexbox.
