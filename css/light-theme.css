@@ -2,8 +2,12 @@
 
 body {
     background-color: var(--white);
-    width: 375px;
-    margin: 2em auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
 }
 
 .navbar {
@@ -70,9 +74,10 @@ body {
     top: 2px;
 }
 
-.card-container {
-    display: flex;
-    flex-direction: column;
+.row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
 }
 
 .card {
