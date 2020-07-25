@@ -14,10 +14,9 @@
         <title>Frontend Mentor | [Challenge Name Here]</title>
         <!-- normalize -->
         <link rel="stylesheet" href="css/normalize.css" />
-        <!-- CSS Styles Dark Theme 👍 -->
-        <!--<link rel="stylesheet" href="css/dark-theme.css" />-->
-        <!-- CSS Styles Light Theme 👍 -->
-        <link rel="stylesheet" href="css/light-theme.css" />
+        <!-- custom css -->
+        <link id="styles-theme" rel="stylesheet" href="css/dark-theme.css" />
+
         <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -34,7 +33,7 @@
                     </div>
                     <div class="navbar-right-side">
                         <span>Dark Mode</span>
-                        <div class="toggle"><span class="circle"></span></div>
+                        <div id="btn-theme-switcher" class="toggle"><span class="circle"></span></div>
                     </div>
                 </nav>
             </header>
@@ -528,5 +527,7 @@
             <!-- end row -->
             </main>
         </div>
+
+        <script src="js/app.js"></script>
     </body>
 </html>
