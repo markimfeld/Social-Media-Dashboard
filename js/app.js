@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+
     const darkTheme = "dark";
     const lightTheme = "light";
 
     const body = document.getElementsByTagName("body")[0];
+
+    const labelToggle = document.getElementById("labelToggle");
 
     const currentTheme = localStorage.getItem("theme");
 
@@ -27,9 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if(currentTheme === darkTheme) {
             body.classList.replace(darkTheme, lightTheme);
             newTheme = lightTheme;
+            labelToggle.innerText = "Light Mode"
         } else {
             body.classList.replace(lightTheme , darkTheme);
             newTheme = darkTheme;
+            labelToggle.innerText = "Dark Mode"
         }
         localStorage.clear();
         localStorage.setItem("theme", newTheme);
