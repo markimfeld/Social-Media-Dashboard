@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const body = document.getElementsByTagName("body")[0];
 
-    const labelToggle = document.getElementById("labelToggle");
-
     const circle = document.getElementById("circle");
 
     const currentTheme = localStorage.getItem("theme");
@@ -34,12 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if(currentTheme === darkTheme) {
             body.classList.replace(darkTheme, lightTheme);
             newTheme = lightTheme;
-            labelToggle.innerText = "Light Mode"
             circle.classList.replace(darkModeCircle, lightModeCircle);
         } else {
             body.classList.replace(lightTheme , darkTheme);
             newTheme = darkTheme;
-            labelToggle.innerText = "Dark Mode"
             circle.classList.replace(lightModeCircle, darkModeCircle);
         }
         localStorage.clear();
