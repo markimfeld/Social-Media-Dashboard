@@ -3,6 +3,7 @@
 
 body {
     background-color: var(--bg-body);
+    transition: background-color 200ms ease-in-out;
 }
 
 .wrapper {
@@ -65,7 +66,16 @@ body {
     height: 1.3em;
     border-radius: 50%;
     position: relative;
+    transition: left 350ms ease-in-out;
+}
+
+.circle-dark-mode {
     left: 4px;
+    top: 2px;
+}
+
+.circle-light-mode {
+    left: 23px;
     top: 2px;
 }
 
@@ -82,8 +92,14 @@ body {
     align-items: center;
     border-radius: .5em;
     height: 14em;
-    margin-bottom: 1.5em;
+    /*margin-bottom: 1.5em;*/
     background-color: var(--bg-card);
+    transition: background-color 200ms ease-in-out;
+}
+
+.card:hover {
+    background-color: var(--bg-top-pattern);
+    cursor: pointer;
 }
 
 .border-facebook::before {
@@ -199,8 +215,14 @@ body {
     align-items: center;
     border-radius: .5em;
     height: 8.5em;
-    margin-bottom: 1.2em;
+    /*margin-bottom: 1.5em;*/
     background-color: var(--bg-card);
+    transition: background-color 200ms ease-in-out;
+}
+
+.small-card:hover {
+    background-color: var(--bg-top-pattern);
+    cursor: pointer;
 }
 
 .card-top {
