@@ -6,4 +6,4 @@ CSS:
 - I used Grid, Flexbox.
 
 JS:
-- I used LocalStorage to save the file theme.
+- I used LocalStorage to save the active theme.
