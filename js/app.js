@@ -1,30 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const darkTheme = "file:///home/marcos/Documents/programming/frontend-challenges/social-media-dashboard-with-theme-switcher-master/css/dark-theme.css";
-    const lightTheme = "file:///home/marcos/Documents/programming/frontend-challenges/social-media-dashboard-with-theme-switcher-master/css/light-theme.css";
+    const darkTheme = "dark";
+    const lightTheme = "light";
+
+    const body = document.getElementsByTagName("body")[0];
+
+    const currentTheme = localStorage.getItem("theme");
+
+    console.log(currentTheme);
     
-    const styles = document.getElementById("styles-theme"); 
-
-    const currentTheme = localStorage.getItem("css");
-
-    styles.href = currentTheme;
+    if(currentTheme != null) {
+        const oldTheme = body.getAttribute("class");
+        body.classList.replace(oldTheme, currentTheme);
+    }
 
     const btnThemeSwitcher = document.getElementById("btn-theme-switcher");
-
 
     btnThemeSwitcher.addEventListener("click", () => {
         changeTheme(); 
     });
 
     const changeTheme = () => {
-        if(styles.href === darkTheme) {
-            styles.href = lightTheme;
-        } else {
-            styles.href = darkTheme;
-        }
+        const currentTheme = body.getAttribute('class');
+        let newTheme = currentTheme;
 
+        if(currentTheme === darkTheme) {
+            body.classList.replace(darkTheme, lightTheme);
+            newTheme = lightTheme;
+        } else {
+            body.classList.replace(lightTheme , darkTheme);
+            newTheme = darkTheme;
+        }
         localStorage.clear();
-        localStorage.setItem("css", styles.href);
+        localStorage.setItem("theme", newTheme);
     }
 }); 
-

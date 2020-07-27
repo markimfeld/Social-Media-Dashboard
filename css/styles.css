@@ -1,7 +1,8 @@
 @import 'general.css';
 
+
 body {
-    background-color: var(--very-dark-blue);
+    background-color: var(--bg-body);
 }
 
 .wrapper {
@@ -25,13 +26,13 @@ body {
 }
 
 .navbar-left-side > h1 {
-    color: var(--white);
+    color: var(--main-text);
     font-weight: 700;
     font-size: 1.7em;
 }
 
 .navbar-left-side > p {
-    color: var(--desaturated-blue);
+    color: var(--secondary-text);
     font-weight: 700;
     font-size: .9em;
     margin: .3em 0;
@@ -45,21 +46,21 @@ body {
 }
 
 .navbar-right-side > span {
-    color: var(--desaturated-blue);
+    color: var(--secondary-text);
     font-weight: 700;
     font-size: .9em;
     margin-right: .7em;
 }
 
 .toggle {
-    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background: linear-gradient(to right, var(--left-toggle), var(--right-toggle));
     width: 3em;
     height: 1.6em;
     border-radius: 1em;
     cursor: pointer; } 
 .circle {
     display: block;
-    background: var(--very-dark-blue);
+    background: var(--circle-toggle);
     width: 1.3em;
     height: 1.3em;
     border-radius: 50%;
@@ -82,7 +83,7 @@ body {
     border-radius: .5em;
     height: 14em;
     margin-bottom: 1.5em;
-    background-color: var(--dark-desaturated-blue);
+    background-color: var(--bg-card);
 }
 
 .border-facebook::before {
@@ -144,7 +145,7 @@ body {
 }
 
 .card-header-text {
-    color: var(--desaturated-blue);
+    color: var(--secondary-text);
     font-weight: 700;
     font-size: 14px;
 }
@@ -156,13 +157,13 @@ body {
 }
 
 .card-body-number {
-    color: var(--white);
+    color: var(--main-text);
     font-weight: 700;
     font-size: 4em;
 }
 
 .card-body-text {
-    color: var(--desaturated-blue);
+    color: var(--secondary-text);
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -178,7 +179,7 @@ body {
 }
 
 .card-footer-day {
-    color: var(--white);
+    color: var(--main-text);
     font-weight: 700;
     font-size: .85em;
 }
@@ -199,7 +200,7 @@ body {
     border-radius: .5em;
     height: 8.5em;
     margin-bottom: 1.2em;
-    background-color: var(--dark-desaturated-blue);
+    background-color: var(--bg-card);
 }
 
 .card-top {
@@ -210,7 +211,7 @@ body {
 }
 
 .card-top-text {
-    color: var(--desaturated-blue);
+    color: var(--secondary-text);
     font-weight: 700;
     font-size: .9em;
 }
@@ -223,13 +224,13 @@ body {
 }
 
 .card-bottom-number {
-    color: var(--white);
+    color: var(--main-text);
     font-weight: 700;
     font-size: 2.2em;
 }
 
 .overview-title {
-    color: var(--white);
+    color: var(--main-text);
     margin-bottom: 1.3em;
 }
 
@@ -243,7 +244,7 @@ body {
 
     .navbar-left-side {
         grid-column: 1 / 3;
-        border-bottom: 1px solid hsl(0, 0%, 18%);   
+        border-bottom: 1px solid var(--border-bottom-nav);
     }
 
     .navbar-left-side > p {

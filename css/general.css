@@ -1,9 +1,4 @@
 :root {
-    --very-dark-blue: hsl(232, 19%, 15%);
-    --dark-desaturated-blue: hsl(228, 28%, 20%);
-    --desaturated-blue: hsl(228, 34%, 66%);
-    --white: hsl(0, 0%, 100%);
-
     --facebook: hsl(208, 92%, 53%);
     --twitter: hsl(203, 89%, 53%);
     --instagram-first-color: hsl(37, 97%, 70%);
@@ -12,14 +7,30 @@
 
     --sucess: #1EB589;
     --danger: #DC414C;
+}
 
+.dark {
+    /* Dark Theme */
+    --bg-body: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --main-text: hsl(0, 0%, 100%);
+    --secondary-text: hsl(228, 34%, 66%);
+    --circle-toggle: hsl(232, 19%, 15%);
+    --left-toggle: hsl(210, 78%, 56%);
+    --right-toggle: hsl(146, 68%, 55%);
+    --border-bottom-nav: hsl(0, 0%, 18%);
+}
 
-    /* Light Theme */
-    --light-gray: hsl(230, 22%, 74%);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --light-grayish-blue: hsl(227, 47%, 96%);
-    --dark-grayish-blue: hsl(228, 12%, 44%);
-    --very-dark-blue: hsl(230, 17%, 14%);
+.light {
+    /* Dark Theme */
+    --bg-body: hsl(0, 0%, 100%);
+    --bg-card: hsl(227, 47%, 96%);
+    --main-text: hsl(230, 17%, 14%);
+    --secondary-text: hsl(228, 12%, 44%);
+    --circle-toggle: hsl(0, 0%, 100%);
+    --left-toggle: hsl(230, 22%, 74%);
+    --right-toggle: hsl(230, 22%, 74%);
+    --border-bottom-nav: hsl(0, 0%, 18%);
 }
 
 html, body {
